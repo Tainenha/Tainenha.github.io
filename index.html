@@ -88,7 +88,7 @@
 
         .hero h2 {
             font-size: 2.5rem;
-            color: var(--text-color);
+            color: #FFD700; /* Màu vàng */
             margin-bottom: 2rem;
         }
 
@@ -109,6 +109,11 @@
 
         .project-card:hover {
             transform: translateY(-10px);
+        }
+
+        /* Thay đổi màu chữ cho <p> */
+        p {
+            color: #F0F0F0; /* Màu trắng nhạt */
         }
 
         /* Responsive Design */
@@ -228,21 +233,36 @@
         </nav>
     </header>
 
-git add .
-git commit -m "Thêm hình ảnh và cập nhật nội dung"
-git push origin main
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Xin chào, Tôi là Tài</h1>
+            <h2>Frontend Developer & UI Designer</h2>
+            <p>Chuyên gia thiết kế trải nghiệm người dùng và phát triển web hiện đại</p>
+            <a href="#contact" class="btn">Liên hệ với tôi</a>
+        </div>
+        <div class="profile-img">
+            <img src="C:\Users\nguye\Desktop\tai\images\Tainenha.jpg" 
+                 alt="Your Name Profile Photo"
+                 loading="lazy"
+                 srcset="path-to-your-image-300w.jpg 300w,
+                         path-to-your-image-600w.jpg 600w"
+                 sizes="(max-width: 768px) 300px,
+                         600px">
+        </div>
+    </section>
 
     <section id="projects" class="projects">
         <div class="project-card">
-            <!-- Đánh dấu vị trí cần gắn hình -->
             <a href="documents/SoCapCuu.pdf" target="_blank">
-            <img src="images/scc.png" 
-                 alt="sccscc" 
-                 class="project-image"
-                 width="400"
-                 height="300">
-            <h3>Dự án huy hiệu rừng Sơ Cấp CứuCứu</h3>
-            <p>Hiện tại, số lượng Thiếu sinh đạt chuyên hiệu sơ cấp cứu còn khá khiêm tốn, phản ánh sự thiếu hụt kỹ năng quan trọng. Kỹ năng sơ cấp cứu không chỉ thiết yếu trong tình huống khẩn cấp mà còn đặc biệt quan trọng khi tham gia các hoạt động ngoài trời như cắm trại hay leo núi. Trang bị kiến thức này giúp các em tự tin xử lý tình huống bất ngờ, đảm bảo an toàn cho bản thân và người xung quanh. Đồng thời, kỹ năng này còn nâng cao ý thức trách nhiệm, tinh thần đồng đội và khuyến khích các em phát triển kỹ năng sống, góp phần vào sự phát triển toàn diện của mỗi cá nhân.</p>
+                <img src="images/scc.png" 
+                     alt="sccscc" 
+                     class="project-image"
+                     loading="lazy"
+                     width="400"
+                     height="300">
+                <h3>Dự án huy hiệu rừng Sơ Cấp CứuCứu</h3>
+                <p>Hiện tại, số lượng Thiếu sinh đạt chuyên hiệu sơ cấp cứu còn khá khiêm tốn, phản ánh sự thiếu hụt kỹ năng quan trọng. Kỹ năng sơ cấp cứu không chỉ thiết yếu trong tình huống khẩn cấp mà còn đặc biệt quan trọng khi tham gia các hoạt động ngoài trời như cắm trại hay leo núi. Trang bị kiến thức này giúp các em tự tin xử lý tình huống bất ngờ, đảm bảo an toàn cho bản thân và người xung quanh. Đồng thời, kỹ năng này còn nâng cao ý thức trách nhiệm, tinh thần đồng đội và khuyến khích các em phát triển kỹ năng sống, góp phần vào sự phát triển toàn diện của mỗi cá nhân.</p>
+            </a>
         </div>
         <!-- Thêm các dự án khác -->
     </section>
